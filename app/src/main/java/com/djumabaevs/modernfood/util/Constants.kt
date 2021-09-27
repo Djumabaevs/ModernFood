@@ -1,4 +1,4 @@
-package com.djumabaevs.modernfood
+package com.djumabaevs.modernfood.util
 
 class Constants {
 
