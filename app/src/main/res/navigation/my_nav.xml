@@ -12,12 +12,12 @@
         tools:layout="@layout/fragment_recipes" />
     <fragment
         android:id="@+id/favoriteRecipesFragment"
-        android:name="com.djumabaevs.modernfood.favoriteRecipesFragment"
+        android:name="com.djumabaevs.modernfood.ui.fragments.FavoriteRecipesFragment"
         android:label="fragment_favorite_recipes"
         tools:layout="@layout/fragment_favorite_recipes" />
     <fragment
         android:id="@+id/foodJokeFragment"
-        android:name="com.djumabaevs.modernfood.foodJokeFragment"
+        android:name="com.djumabaevs.modernfood.ui.fragments.FoodJokeFragment"
         android:label="fragment_food_joke"
         tools:layout="@layout/fragment_food_joke" />
 </navigation>
