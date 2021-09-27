@@ -1,4 +1,4 @@
-package com.djumabaevs.modernfood
+package com.djumabaevs.modernfood.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.djumabaevs.modernfood.R
 import com.djumabaevs.modernfood.databinding.ActivityMainBinding
 
 

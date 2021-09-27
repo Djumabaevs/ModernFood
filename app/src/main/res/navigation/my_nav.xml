@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/recipesFragment"
-        android:name="com.djumabaevs.modernfood.RecipesFragment"
+        android:name="com.djumabaevs.modernfood.ui.fragments.RecipesFragment"
         android:label="fragment_recipes"
         tools:layout="@layout/fragment_recipes" />
     <fragment
