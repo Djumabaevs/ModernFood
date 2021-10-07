@@ -39,3 +39,51 @@ class FavoriteRecipesAdapter(
         }
 
     }
+
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+        return MyViewHolder.from(parent)
+    }
+
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+        myViewHolders.add(holder)
+        rootView = holder.itemView.rootView
+
+        val currentRecipe = favoriteRecipes[position]
+        holder.bind(currentRecipe)
+
+        saveItemStateOnScroll(currentRecipe, holder)
+
+        /**
+         * Single Click Listener
+         * */
+        holder.binding.favoriteRecipesRowLayout.setOnClickListener {
+            if (multiSelection) {
+                applySelection(holder, currentRecipe)
+            } else {
+                val action =
+                    FavoriteRecipesFragmentDirections.actionFavoriteRecipesFragmentToDetailsActivity(
+                        currentRecipe.result
+                    )
+                holder.itemView.findNavController().navigate(action)
+            }
+        }
+
+        /**
+         * Long Click Listener
+         * */
+        holder.binding.favoriteRecipesRowLayout.setOnLongClickListener {
+            if (!multiSelection) {
+                multiSelection = true
+                requireActivity.startActionMode(this)
+                applySelection(holder, currentRecipe)
+                true
+            } else {
+                applySelection(holder, currentRecipe)
+                true
+            }
+
+        }
+
+    }
+
