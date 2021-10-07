@@ -130,6 +130,23 @@ class FavoriteRecipesAdapter(
         }
     }
 
+    override fun getItemCount(): Int {
+        return favoriteRecipes.size
+    }
+
+    override fun onCreateActionMode(actionMode: ActionMode?, menu: Menu?): Boolean {
+        actionMode?.menuInflater?.inflate(R.menu.favorites_contextual_menu, menu)
+        mActionMode = actionMode!!
+        applyStatusBarColor(R.color.contextualStatusBarColor)
+        return true
+    }
+
+    override fun onPrepareActionMode(actionMode: ActionMode?, menu: Menu?): Boolean {
+        return true
+    }
+
+
+
 
 
 
