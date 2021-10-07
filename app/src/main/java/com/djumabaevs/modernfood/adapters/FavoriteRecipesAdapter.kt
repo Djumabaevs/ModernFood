@@ -168,6 +168,36 @@ class FavoriteRecipesAdapter(
         applyStatusBarColor(R.color.statusBarColor)
     }
 
+    private fun applyStatusBarColor(color: Int) {
+        requireActivity.window.statusBarColor =
+            ContextCompat.getColor(requireActivity, color)
+    }
+
+    fun setData(newFavoriteRecipes: List<FavoritesEntity>) {
+        val favoriteRecipesDiffUtil =
+            RecipesDiffUtil(favoriteRecipes, newFavoriteRecipes)
+        val diffUtilResult = DiffUtil.calculateDiff(favoriteRecipesDiffUtil)
+        favoriteRecipes = newFavoriteRecipes
+        diffUtilResult.dispatchUpdatesTo(this)
+    }
+
+    private fun showSnackBar(message: String) {
+        Snackbar.make(
+            rootView,
+            message,
+            Snackbar.LENGTH_SHORT
+        ).setAction("Okay") {}
+            .show()
+    }
+
+    fun clearContextualActionMode() {
+        if (this::mActionMode.isInitialized) {
+            mActionMode.finish()
+        }
+    }
+
+}
+
 
 
 
