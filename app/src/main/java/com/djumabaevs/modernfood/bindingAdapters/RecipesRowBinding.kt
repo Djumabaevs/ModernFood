@@ -1,5 +1,17 @@
 package com.djumabaevs.modernfood.bindingAdapters
 
+import org.jsoup.Jsoup
+import java.lang.Exception
+import android.util.Log
+import android.view.View
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
+import androidx.databinding.BindingAdapter
+import androidx.navigation.findNavController
+import coil.load
+
 class RecipesRowBinding {
 
     companion object {
