@@ -3,6 +3,7 @@ package com.djumabaevs.modernfood.data.database
 import androidx.room.TypeConverter
 import com.djumabaevs.modernfood.models.FoodRecipe
 import com.google.gson.Gson
+import com.djumabaevs.modernfood.models.Result
 import com.google.gson.reflect.TypeToken
 
 class RecipesTypeConverter {

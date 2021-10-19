@@ -1,6 +1,9 @@
 package com.djumabaevs.modernfood.data.database
 
 import androidx.room.*
+import com.djumabaevs.modernfood.data.database.entities.FavoritesEntity
+import com.djumabaevs.modernfood.data.database.entities.FoodJokeEntity
+import com.djumabaevs.modernfood.data.database.entities.RecipesEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao
