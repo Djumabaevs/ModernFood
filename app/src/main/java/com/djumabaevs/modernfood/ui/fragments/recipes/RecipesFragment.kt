@@ -11,9 +11,9 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.djumabaevs.modernfood.MainViewModel
+import com.djumabaevs.modernfood.viewmodels.MainViewModel
 import com.djumabaevs.modernfood.R
-import com.djumabaevs.modernfood.RecipesViewModel
+import com.djumabaevs.modernfood.viewmodels.RecipesViewModel
 import com.djumabaevs.modernfood.adapters.RecipesAdapter
 import com.djumabaevs.modernfood.databinding.FragmentRecipesBinding
 import com.djumabaevs.modernfood.util.NetworkListener

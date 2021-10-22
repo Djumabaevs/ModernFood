@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
-import com.djumabaevs.modernfood.MainViewModel
+import com.djumabaevs.modernfood.viewmodels.MainViewModel
 import com.djumabaevs.modernfood.R
 import com.djumabaevs.modernfood.databinding.FragmentFoodJokeBinding
 import com.djumabaevs.modernfood.util.Constants.Companion.API_KEY

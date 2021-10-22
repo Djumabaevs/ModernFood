@@ -1,4 +1,4 @@
-package com.djumabaevs.modernfood
+package com.djumabaevs.modernfood.viewmodels
 
 import kotlinx.coroutines.launch
 import retrofit2.Response

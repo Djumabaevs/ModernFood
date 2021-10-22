@@ -1,4 +1,7 @@
-package com.djumabaevs.modernfood
+package com.djumabaevs.modernfood.ui
+
+import com.djumabaevs.modernfood.viewmodels.MainViewModel
+import com.djumabaevs.modernfood.R
 
 @AndroidEntryPoint
 class DetailsActivity : AppCompatActivity() {

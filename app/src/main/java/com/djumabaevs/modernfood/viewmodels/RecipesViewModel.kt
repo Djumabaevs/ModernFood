@@ -1,4 +1,4 @@
-package com.djumabaevs.modernfood
+package com.djumabaevs.modernfood.viewmodels
 
 import android.app.Application
 import android.widget.Toast

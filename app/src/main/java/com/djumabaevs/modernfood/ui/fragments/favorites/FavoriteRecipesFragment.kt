@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.djumabaevs.modernfood.MainViewModel
+import com.djumabaevs.modernfood.viewmodels.MainViewModel
 import com.djumabaevs.modernfood.R
 import com.djumabaevs.modernfood.adapters.FavoriteRecipesAdapter
 import com.djumabaevs.modernfood.databinding.FragmentFavoriteRecipesBinding
