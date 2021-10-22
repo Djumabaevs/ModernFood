@@ -1,7 +1,26 @@
 package com.djumabaevs.modernfood.ui
 
+import android.os.Bundle
+import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
+import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
+import androidx.navigation.navArgs
 import com.djumabaevs.modernfood.viewmodels.MainViewModel
 import com.djumabaevs.modernfood.R
+import com.djumabaevs.modernfood.adapters.PagerAdapter
+import com.djumabaevs.modernfood.data.database.entities.FavoritesEntity
+import com.djumabaevs.modernfood.databinding.ActivityDetailsBinding
+import com.djumabaevs.modernfood.ui.fragments.ingredients.IngredientsFragment
+import com.djumabaevs.modernfood.ui.fragments.instructions.InstructionsFragment
+import com.djumabaevs.modernfood.ui.fragments.overview.OverviewFragment
+import com.djumabaevs.modernfood.util.Constants.Companion.RECIPE_RESULT_KEY
+import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.tabs.TabLayoutMediator
+import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class DetailsActivity : AppCompatActivity() {
