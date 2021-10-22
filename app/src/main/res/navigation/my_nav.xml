@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_recipes" />
     <fragment
         android:id="@+id/favoriteRecipesFragment"
-        android:name="com.djumabaevs.modernfood.ui.fragments.FavoriteRecipesFragment"
+        android:name="com.djumabaevs.modernfood.ui.fragments.favorites.FavoriteRecipesFragment"
         android:label="fragment_favorite_recipes"
         tools:layout="@layout/fragment_favorite_recipes" />
     <fragment
