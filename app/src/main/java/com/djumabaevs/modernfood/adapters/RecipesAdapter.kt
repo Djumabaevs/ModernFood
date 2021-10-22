@@ -1,11 +1,13 @@
 package com.djumabaevs.modernfood.adapters
 
+import com.djumabaevs.modernfood.models.Result
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.djumabaevs.modernfood.databinding.RecipesRowLayoutBinding
 import com.djumabaevs.modernfood.models.FoodRecipe
+import com.djumabaevs.modernfood.util.RecipesDiffUtil
 
 class RecipesAdapter : RecyclerView.Adapter<RecipesAdapter.MyViewHolder>() {
 

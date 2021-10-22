@@ -6,6 +6,12 @@ import androidx.fragment.app.FragmentActivity
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.djumabaevs.modernfood.R
+import com.djumabaevs.modernfood.data.database.entities.FavoritesEntity
+import com.djumabaevs.modernfood.databinding.FavoriteRecipesRowLayoutBinding
+import com.djumabaevs.modernfood.ui.fragments.favorites.FavoriteRecipesFragmentDirections
+import com.djumabaevs.modernfood.util.RecipesDiffUtil
+import com.djumabaevs.modernfood.viewmodels.MainViewModel
 import com.google.android.material.snackbar.Snackbar
 
 class FavoriteRecipesAdapter(
@@ -39,7 +45,6 @@ class FavoriteRecipesAdapter(
         }
 
     }
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         return MyViewHolder.from(parent)
@@ -197,7 +202,6 @@ class FavoriteRecipesAdapter(
     }
 
 }
-
 
 
 

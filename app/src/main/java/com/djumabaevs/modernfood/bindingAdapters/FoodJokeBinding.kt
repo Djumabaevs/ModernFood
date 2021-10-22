@@ -1,9 +1,13 @@
-package com.djumabaevs.modernfood.bindingAdapters
+package com.djumabaevs.modernfood.bindingadapters
 
 import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
+import com.djumabaevs.modernfood.data.database.entities.FoodJokeEntity
+import com.djumabaevs.modernfood.models.FoodJoke
+import com.djumabaevs.modernfood.models.Result
+import com.djumabaevs.modernfood.util.NetworkResult
 import com.google.android.material.card.MaterialCardView
 
 class FoodJokeBinding {

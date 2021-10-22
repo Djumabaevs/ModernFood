@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.djumabaevs.modernfood.models.Result
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.djumabaevs.modernfood.adapters.IngredientsAdapter
 import com.djumabaevs.modernfood.databinding.FragmentIngredientsBinding

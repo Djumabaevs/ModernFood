@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebViewClient
+import com.djumabaevs.modernfood.models.Result
 import com.djumabaevs.modernfood.databinding.FragmentInstructionsBinding
 import com.djumabaevs.modernfood.util.Constants
 

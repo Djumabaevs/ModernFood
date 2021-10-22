@@ -1,7 +1,5 @@
-package com.djumabaevs.modernfood.bindingAdapters
+package com.djumabaevs.modernfood.bindingadapters
 
-import org.jsoup.Jsoup
-import java.lang.Exception
 import android.util.Log
 import android.view.View
 import android.widget.ImageView
@@ -11,6 +9,11 @@ import androidx.core.content.ContextCompat
 import androidx.databinding.BindingAdapter
 import androidx.navigation.findNavController
 import coil.load
+import com.djumabaevs.modernfood.models.Result
+import com.djumabaevs.modernfood.R
+import com.djumabaevs.modernfood.ui.fragments.recipes.RecipesFragmentDirections
+import org.jsoup.Jsoup
+import java.lang.Exception
 
 class RecipesRowBinding {
 

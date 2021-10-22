@@ -2,9 +2,14 @@ package com.djumabaevs.modernfood.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import com.djumabaevs.modernfood.R
+import com.djumabaevs.modernfood.databinding.IngredientsRowLayoutBinding
 import com.djumabaevs.modernfood.models.ExtendedIngredient
+import com.djumabaevs.modernfood.util.Constants.Companion.BASE_IMAGE_URL
+import com.djumabaevs.modernfood.util.RecipesDiffUtil
 import java.util.*
 
 class IngredientsAdapter: RecyclerView.Adapter<IngredientsAdapter.MyViewHolder>() {

@@ -2,6 +2,8 @@ package com.djumabaevs.modernfood.di
 
 import android.content.Context
 import androidx.room.Room
+import com.djumabaevs.modernfood.data.database.RecipesDatabase
+import com.djumabaevs.modernfood.util.Constants.Companion.DATABASE_NAME
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

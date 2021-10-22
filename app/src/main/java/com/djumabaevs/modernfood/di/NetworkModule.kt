@@ -1,6 +1,7 @@
 package com.djumabaevs.modernfood.di
 
-
+import com.djumabaevs.modernfood.data.network.FoodRecipesApi
+import com.djumabaevs.modernfood.util.Constants.Companion.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

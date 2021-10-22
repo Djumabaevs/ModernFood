@@ -9,7 +9,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import coil.load
-import com.djumabaevs.modernfood.bindingAdapters.RecipesRowBinding
+import com.djumabaevs.modernfood.models.Result
+import com.djumabaevs.modernfood.R
+import com.djumabaevs.modernfood.bindingadapters.RecipesRowBinding
 import com.djumabaevs.modernfood.databinding.FragmentOverviewBinding
 import com.djumabaevs.modernfood.util.Constants.Companion.RECIPE_RESULT_KEY
 
@@ -47,7 +49,7 @@ class OverviewFragment : Fragment() {
 
     private fun updateColors(stateIsOn: Boolean, textView: TextView, imageView: ImageView) {
         if (stateIsOn) {
-            imageView.setColorFilter(ContextCompat.getColor(requireContext(),R.color.green))
+            imageView.setColorFilter(ContextCompat.getColor(requireContext(), R.color.green))
             textView.setTextColor(ContextCompat.getColor(requireContext(), R.color.green))
         }
     }

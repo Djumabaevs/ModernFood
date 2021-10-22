@@ -1,6 +1,7 @@
 package com.djumabaevs.modernfood.util
 
 import androidx.recyclerview.widget.DiffUtil
+import com.djumabaevs.modernfood.models.Result
 
 
 class RecipesDiffUtil<T>(
